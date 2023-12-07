@@ -47,6 +47,13 @@
             </section>
             <hr>
             <h2>Votre Personnage !</h2>
+            <section class="choix">
+                <label for="nom">Voulez vous un personnage de base ou un personnage personnalisé ?</label>
+                <input type="radio" name="choix" id="base" value="base">
+                <label for="base">Personnage de base</label>
+                <input type="radio" name="choix" id="custom" value="custom">
+                <label for="custom">Personnage personnalisé</label>
+            </section>
             <section class="nom">
                 <label for="nom">Quel sera le Nom de votre Personnage ?</label>
                 <input type="text" name="nom" id="nom">
@@ -87,6 +94,7 @@
                 <p>ATTENTION ! : La classe de Barde n'est jouable que si il y a plus de 4 joueurs dans la partie !</p>
             </section>
             <h3>Les Statistiques de votre Personnage !</h3>
+            <p>ATTENTION ! : Uniquement si vous avez selectioné l'option "Personnage personnalisé" !</p>
             <p>Vous devez ajouter des points dans vos states</p>
             <p>vos states de base sont:</p>
             <ul>
