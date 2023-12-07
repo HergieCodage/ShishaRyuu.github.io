@@ -22,140 +22,141 @@
                     </div>
                 </nav>
             </header>
-            <main>
-        <div align="center">
-            <h1><u>Demande de Personnage</u></h1>
-            <h1 class="text-danger"><u>EN CONSTRUCTION</u></h1>
-        <p>Ceci est un formulaire de demande de Personnage !</p>
-        <p>Celà Permettra au MJ de créer vos Personnages sur le Serveur Discord du JDR en avance.</p>
-        <p>Cependant, en cas de difficulté à remplir le formulaire, il vous sera toujours possible de créer vos ou votre personnage lors de vos parties !</p>
-        </div>
-        <form action="submission.html" method="POST">
-            <h2>Vous !</h2>
-            <section class="serveur">
-                <span>Etes-vous déjà sur le serveur Discord ?</span>
-                <br>
-                <input type="radio" name="serveur" id="yes" value="yes">
-                <label for="yes">Oui</label>
-                <input type="radio" name="serveur" id="no" value="no">
-                <label for="no">Non</label>
-            </section>
-            <br>
-            <section class="joueur">
-                <label for="pseudo">Quel est votre Pseudo sur le serveur ?</label>
-                <br>
-                <input type="text" name="pseudo" id="pseudo">
-            </section>
-            <br>
-            <h2>Votre Personnage !</h2>
-            <section class="choix">
-                <label for="nom">Voulez vous un personnage de base ou un personnage personnalisé ?</label>
-                <br>
-                <input type="radio" name="choix" id="base" value="base">
-                <label for="base">Personnage de base</label>
-                <p>"Un personnage de base est un personnage avec des statistiques déjà établie de manière équilibré !"</p>
-                <input type="radio" name="choix" id="custom" value="custom">
-                <label for="custom">Personnage personnalisé</label>
-                <p>"Un personnage personnalisé est un personnage où vous ajoutez vous même des points dans chaque statistique !"</p>
-            </section>
-            <br>
-            <section class="nom">
-                <label for="nom">Quel sera le Nom de votre Personnage ?</label>
-                <br>
-                <input type="text" name="nom" id="nom">
-            </section>
-            <br>
-            <section class="sexe">
-                <span>De quel sexe est votre Personnage?</span>
-                <br>
-                <input type="radio" name="sexe" id="femme" value="femme">
-                <label for="femme">Femme</label>
-                <input type="radio" name="sexe" id="homme" value="homme">
-                <label for="homme">Homme</label>
-            </section>
-            <br>
-            <section class="Races">
-                <label for="race">De quelle Race est votre Personnage ?</label>
-                <br>
-                <select name="race" id="race">
-                    <option value="rien"></option>
-                    <option value="elfe">Elfe</option>
-                    <option value="nain">Nain</option>
-                    <option value="humain">Humain</option>
-                    <option value="barbare">Barbare</option>
-                    <option value="orc">Orc</option>
-                    <option value="semi-homme">Semi-Homme</option>
-                </select>
-            </section>
-            <br>
-            <section class="Classes">
-                <span>Quelle Classe souhaitez-vous jouer ?</span>
-                <br>
-                <input type="radio" name="classe" id="classe1" value="barde">
-                <label for="barde">Barde</label>
-                <input type="radio" name="classe" id="classe2" value="mage">
-                <label for="mage">Mage</label>
-                <input type="radio" name="classe" id="classe3" value="archer">
-                <label for="archer">Archer</label>
-                <input type="radio" name="classe" id="classe4" value="paladin">
-                <label for="paladin">Paladin</label>
-                <input type="radio" name="classe" id="classe5" value="berzerker">
-                <label for="berzerker">Berzerker</label>
-                <input type="radio" name="classe" id="classe6" value="voleur">
-                <label for="voleur">Voleur</label>
-                <p class="text-danger">ATTENTION ! : La classe de Barde n'est jouable que si il y a plus de 4 joueurs dans la partie !</p>
-            </section>
-            <h3>Les Statistiques de votre Personnage Personnalisé !</h3>
-            <p class="text-danger">ATTENTION ! : Uniquement si vous avez selectioné l'option "Personnage personnalisé" !</p>
-            <p>Vous devez ajouter des points dans vos states</p>
-            <p>vos states de base sont:</p>
-            <ul>
-                <li>FORCE = 30</li>
-                <li>AGILITÉ = 30</li>
-                <li>INTELLIGENCE = 30</li>
-                <li>APPARENCE = 30</li>
-                <li>ENDURANCE = 50</li>
-                <li>MENTALITÉ = 30</li>
-            </ul>
-            <p class="text-danger">ATTENTION ! : la somme total des points que vous devez ajouter ne doit pas dépasser 130 points !</p>
-            <p class="text-danger">Les points de base ne sont pas pris en compte dans les 130 points !</p>
-            <p class="text-danger">Exemple : Vos points de base en Force sont de 30, si vous ajouter 50pts dans cette statistique vous aurez donc 80pts en Force et il vous restera 80pts à répartir !</p>
-            <section class="stat">
-                <label for="force">FORCE = </label>
-                <input type="number" name="force" id="force" min="0" max="50"><sub> max 50pts !</sub>
-                <br>
-                <br>
-                <label for="agilite">AGILITÉ = </label>
-                <input type="number" name="agilite" id="agilite" min="0" max="50"><sub> max 50pts !</sub>
-                <br>
-                <br>
-                <label for="intelligence">INTELLIGENCE = </label>
-                <input type="number" name="intelligence" id="intelligence" min="0" max="50"><sub> max 50pts !</sub>
-                <br>
-                <br>
-                <label for="apparence">APPARENCE = </label>
-                <input type="number" name="apparence" id="apparence" min="0" max="50"><sub> max 50pts !</sub>
-                <br>
-                <br>
-                <label for="endurance">ENDURANCE = </label>
-                <input type="number" name="endurance" id="endurance" min="0" max="30"><sub> max 30pts !</sub>
-                <br>
-                <br>
-                <label for="mentalite">MENTALITÉ = </label>
-                <input type="number" name="mentalite" id="mentalite" min="0" max="50"><sub> max 50pts !</sub>
-                <br>
-                <br>
-                <p>Si vous souhaitez créer un personnage personnalisé mais que vous avez des difficulté pour savoir combien de points ajoutés et dans quel statistiques !</p>
-                <p>Vous pouvez toujours rejoindre le Discord pour que le MJ vous aide !</p>
-            </section>
-            <hr>
-            <section class="submit">
-                <input type="submit">
-                <p class="text-danger"><big><b><u> ATTENTION ! : l'envois de demande de personnage n'est pas encore disponible !</u></b></big></p>
-            </section>                      
-        </form>
-            </main>
-        </div>
+        <main>
+            <div align="center">
+                <h1><u>Demande de Personnage</u></h1>
+                <h1 class="text-danger"><u>EN CONSTRUCTION</u></h1>
+                    <p>Ceci est un formulaire de demande de Personnage !</p>
+                    <p>Celà Permettra au MJ de créer vos Personnages sur le Serveur Discord du JDR en avance.</p>
+                    <p>Cependant, en cas de difficulté à remplir le formulaire, il vous sera toujours possible de créer vos ou votre personnage lors de vos parties !</p>
+            </div>
+            <div align="center">
+                <form action="submission.html" method="POST">
+                    <h2>Vous !</h2>
+                    <section class="serveur">
+                        <span>Etes-vous déjà sur le serveur Discord ?</span>
+                        <br>
+                        <input type="radio" name="serveur" id="yes" value="yes">
+                        <label for="yes">Oui</label>
+                        <input type="radio" name="serveur" id="no" value="no">
+                        <label for="no">Non</label>
+                    </section>
+                    <br>
+                    <section class="joueur">
+                        <label for="pseudo">Quel est votre Pseudo sur le serveur ?</label>
+                        <br>
+                        <input type="text" name="pseudo" id="pseudo">
+                    </section>
+                    <br>
+                    <h2>Votre Personnage !</h2>
+                    <section class="choix">
+                        <label for="nom">Voulez vous un personnage de base ou un personnage personnalisé ?</label>
+                        <br>
+                        <input type="radio" name="choix" id="base" value="base">
+                        <label for="base">Personnage de base</label>
+                        <p>"Un personnage de base est un personnage avec des statistiques déjà établie de manière équilibré !"</p>
+                        <input type="radio" name="choix" id="custom" value="custom">
+                        <label for="custom">Personnage personnalisé</label>
+                        <p>"Un personnage personnalisé est un personnage où vous ajoutez vous même des points dans chaque statistique !"</p>
+                    </section>
+                    <br>
+                    <section class="nom">
+                        <label for="nom">Quel sera le Nom de votre Personnage ?</label>
+                        <br>
+                        <input type="text" name="nom" id="nom">
+                    </section>
+                    <br>
+                    <section class="sexe">
+                        <span>De quel sexe est votre Personnage?</span>
+                        <br>
+                        <input type="radio" name="sexe" id="femme" value="femme">
+                        <label for="femme">Femme</label>
+                        <input type="radio" name="sexe" id="homme" value="homme">
+                        <label for="homme">Homme</label>
+                    </section>
+                    <br>
+                    <section class="Races">
+                        <label for="race">De quelle Race est votre Personnage ?</label>
+                        <br>
+                        <select name="race" id="race">
+                            <option value="rien"></option>
+                            <option value="elfe">Elfe</option>
+                            <option value="nain">Nain</option>
+                            <option value="humain">Humain</option>
+                            <option value="barbare">Barbare</option>
+                            <option value="orc">Orc</option>
+                            <option value="semi-homme">Semi-Homme</option>
+                        </select>
+                    </section>
+                    <br>
+                    <section class="Classes">
+                        <span>Quelle Classe souhaitez-vous jouer ?</span>
+                        <br>
+                        <input type="radio" name="classe" id="classe1" value="barde">
+                        <label for="barde">Barde</label>
+                        <input type="radio" name="classe" id="classe2" value="mage">
+                        <label for="mage">Mage</label>
+                        <input type="radio" name="classe" id="classe3" value="archer">
+                        <label for="archer">Archer</label>
+                        <input type="radio" name="classe" id="classe4" value="paladin">
+                        <label for="paladin">Paladin</label>
+                        <input type="radio" name="classe" id="classe5" value="berzerker">
+                        <label for="berzerker">Berzerker</label>
+                        <input type="radio" name="classe" id="classe6" value="voleur">
+                        <label for="voleur">Voleur</label>
+                        <p class="text-danger">ATTENTION ! : La classe de Barde n'est jouable que si il y a plus de 4 joueurs dans la partie !</p>
+                    </section>
+                    <h3>Les Statistiques de votre Personnage Personnalisé !</h3>
+                    <p class="text-danger">ATTENTION ! : Uniquement si vous avez selectioné l'option "Personnage personnalisé" !</p>
+                    <p>Vous devez ajouter des points dans vos states</p>
+                    <p>vos states de base sont:</p>
+                    <ul style="list-style-type:none;">
+                        <li>FORCE = 30</li>
+                        <li>AGILITÉ = 30</li>
+                        <li>INTELLIGENCE = 30</li>
+                        <li>APPARENCE = 30</li>
+                        <li>ENDURANCE = 50</li>
+                        <li>MENTALITÉ = 30</li>
+                    </ul>
+                    <p class="text-danger">ATTENTION ! : la somme total des points que vous devez ajouter ne doit pas dépasser 130 points !</p>
+                    <p class="text-danger">Les points de base ne sont pas pris en compte dans les 130 points !</p>
+                    <p class="text-danger">Exemple : Vos points de base en Force sont de 30, si vous ajouter 50pts dans cette statistique vous aurez donc 80pts en Force et il vous restera 80pts à répartir !</p>
+                    <section class="stat">
+                        <label for="force">FORCE = </label>
+                        <input type="number" name="force" id="force" min="0" max="50"><sub> max 50pts !</sub>
+                        <br>
+                        <br>
+                        <label for="agilite">AGILITÉ = </label>
+                        <input type="number" name="agilite" id="agilite" min="0" max="50"><sub> max 50pts !</sub>
+                        <br>
+                        <br>
+                        <label for="intelligence">INTELLIGENCE = </label>
+                        <input type="number" name="intelligence" id="intelligence" min="0" max="50"><sub> max 50pts !</sub>
+                        <br>
+                        <br>
+                        <label for="apparence">APPARENCE = </label>
+                        <input type="number" name="apparence" id="apparence" min="0" max="50"><sub> max 50pts !</sub>
+                        <br>
+                        <br>
+                        <label for="endurance">ENDURANCE = </label>
+                        <input type="number" name="endurance" id="endurance" min="0" max="30"><sub> max 30pts !</sub>
+                        <br>
+                        <br>
+                        <label for="mentalite">MENTALITÉ = </label>
+                        <input type="number" name="mentalite" id="mentalite" min="0" max="50"><sub> max 50pts !</sub>
+                        <br>
+                        <br>
+                        <p>Si vous souhaitez créer un personnage personnalisé mais que vous avez des difficulté pour savoir combien de points ajoutés et dans quel statistiques !</p>
+                        <p>Vous pouvez toujours rejoindre le Discord pour que le MJ vous aide !</p>
+                    </section>
+                    <hr>
+                    <section class="submit">
+                        <input type="submit">
+                        <p class="text-danger"><big><b><u> ATTENTION ! : l'envois de demande de personnage n'est pas encore disponible !</u></b></big></p>
+                    </section>                      
+                </form>
+            </div>
+        </main>
         <footer class="navbar navbar-expand-md navbar-light justify-content-center px-3">
             <!-- <div class="box a"> -->
             <button type="button" class="navbar-toggler border border-dark" data-bs-toggle="collapse" data-bs-target="#navbar-content2">
@@ -173,5 +174,6 @@
             </nav>
             <!-- </div> -->
         </footer>
+        </div>
     </body>
 </html>
