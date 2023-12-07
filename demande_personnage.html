@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <title>SHISHA-RYU (Demande de Personnage)</title>
+    <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class="grid">
+            <header>
+                <div class="box a">
+                <nav>
+                    <aside>
+                        <a class="lien4" href="index.html">Page d'accueil</a>
+                        <br>
+                        <a class="lien1" href="beta_testeur.html">LES BEST BETA-TESTEURS</a>
+                        <br>
+                        <a class="lien2" href="deroulement_partie.html">Comment se déroule une Partie</a>
+                        <br>
+                        <a class="lien3" href="fiche_perso_type.html">À quoi ressemble une Fiche Personnages</a>
+                    </aside>    
+                </nav>
+                </div>
+            </header>
+            <main>
+        <div align="center">
+        <h1><u>Demande de Personnage</u></h1>
+        <h1><u>EN CONSTRUCTION</u></h1>
+        <p>Ceci est un formulaire de demande de Personnage !</p>
+        <p>Celà Permettra au MJ de créer vos Personnages sur le Serveur Discord du JDR en avance.</p>
+        <p>Cependant, en cas de difficulté à remplir le formulaire, il vous sera toujours possible de créer vos ou votre personnage lors de vos parties !</p>
+        </div>
+        <form action="submission.html" method="POST">
+            <h2>Vous !</h2>
+            <section class="serveur">
+                <span>Etes-vous déjà sur le serveur Discord ?</span>
+                <input type="radio" name="serveur" id="yes" value="yes">
+                <label for="yes">Oui</label>
+                <input type="radio" name="serveur" id="no" value="no">
+                <label for="no">Non</label>
+            </section>
+            <br>
+            <section class="joueur">
+                <label for="pseudo">Quel est votre Pseudo sur le serveur ?</label>
+                <input type="text" name="pseudo" id="pseudo">
+            </section>
+            <hr>
+            <h2>Votre Personnage !</h2>
+            <section class="nom">
+                <label for="nom">Quel sera le Nom de votre Personnage ?</label>
+                <input type="text" name="nom" id="nom">
+            </section>
+            <section class="sexe">
+                <span>De quel sexe est votre Personnage?</span>
+                <input type="radio" name="sexe" id="femme" value="femme">
+                <label for="femme">Femme</label>
+                <input type="radio" name="sexe" id="homme" value="homme">
+                <label for="homme">Homme</label>
+            </section>
+            <section class="Races">
+                <label for="race">De quelle Race est votre Personnage ?</label>
+                <select name="race" id="race">
+                    <option value="rien"></option>
+                    <option value="elfe">Elfe</option>
+                    <option value="nain">Nain</option>
+                    <option value="humain">Humain</option>
+                    <option value="barbare">Barbare</option>
+                    <option value="orc">Orc</option>
+                    <option value="semi-homme">Semi-Homme</option>
+                </select>
+            </section>
+            <section class="Classes">
+                <span>Quelle Classe souhaitez-vous jouer ?</span>
+                <input type="radio" name="classe" id="classe1" value="barde">
+                <label for="barde">Barde</label>
+                <input type="radio" name="classe" id="classe2" value="mage">
+                <label for="mage">Mage</label>
+                <input type="radio" name="classe" id="classe3" value="archer">
+                <label for="archer">Archer</label>
+                <input type="radio" name="classe" id="classe4" value="paladin">
+                <label for="paladin">Paladin</label>
+                <input type="radio" name="classe" id="classe5" value="berzerker">
+                <label for="berzerker">Berzerker</label>
+                <input type="radio" name="classe" id="classe6" value="voleur">
+                <label for="voleur">Voleur</label>
+                <p>ATTENTION ! : La classe de Barde n'est jouable que si il y a plus de 4 joueurs dans la partie !</p>
+            </section>
+            <h3>Les Statistiques de votre Personnage !</h3>
+            <p>Vous devez ajouter des points dans vos states</p>
+            <p>vos states de base sont:</p>
+            <ul>
+                <li>FORCE = 30</li>
+                <li>AGILITÉ = 30</li>
+                <li>INTELLIGENCE = 30</li>
+                <li>APPARENCE = 30</li>
+                <li>ENDURANCE = 50</li>
+                <li>MENTALITÉ = 30</li>
+            </ul>
+            <p>ATTENTION ! : la somme total des points que vous devez ajouter ne doit pas dépasser 130 points !</p>
+            <p>Les points de base ne sont pas pris en compte dans les 130 points !</p>
+            <section class="stat">
+                <label for="force">FORCE</label>
+                <input type="number" name="force" id="force" min="0" max="50">
+                <br>
+                <label for="agilite">AGILITÉ</label>
+                <input type="number" name="agilite" id="agilite" min="0" max="50">
+                <br>
+                <label for="intelligence">INTELLIGENCE</label>
+                <input type="number" name="intelligence" id="intelligence" min="0" max="50">
+                <br>
+                <label for="apparence">APPARENCE</label>
+                <input type="number" name="apparence" id="apparence" min="0" max="50">
+                <br>
+                <label for="endurance">ENDURANCE</label>
+                <input type="number" name="endurance" id="endurance" min="0" max="30">
+                <br>
+                <label for="mentalite">MENTALITÉ</label>
+                <input type="number" name="mentalite" id="mentalite" min="0" max="50">
+            </section>
+            <hr>
+            <section class="submit">
+                <input type="submit">
+                <p>ATTENTION ! : l'envois de demande de personnage n'est pas encore disponible</p>
+            </section>                      
+        </form>
+            </main>
+        </div>
+    </body>
+</html>

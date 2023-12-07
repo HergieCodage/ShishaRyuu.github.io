@@ -1,0 +1,200 @@
+html, 
+body {
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    line-height: 1;
+    letter-spacing: 0.005em;
+    }
+
+body {
+    background-image: url('../image/fond2.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    }
+
+.img {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: block;
+    overflow: hidden;
+    text-align: center;
+    }
+
+/* .lien1 {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    text-align: center;
+    border-style: solid;
+    border-radius: 5px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    background-color: #34B3A0;
+    color: black;
+    transition-property: background-color;
+    transition-duration: 750ms;
+}
+
+.lien2 {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    text-align: center;
+    border-radius: 5px;
+    border-style: solid;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+    width: 260px;
+    height: 50px;
+    line-height: 50px;
+    background-color: #34B3A0;
+    color:black;
+    transition-property: background-color;
+    transition-duration: 750ms;
+}
+
+.lien3 {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    text-align: center;
+    border-radius: 5px;
+    border-style: solid;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+    width: 240px;
+    height: 50px;
+    line-height: 50px;
+    background-color: #34B3A0;
+    color: black;
+    transition-property: background-color;
+    transition-duration: 750ms;
+}
+
+.lien4 {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    text-align: center;
+    border-radius: 5px;
+    border-style: solid;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+    width: 130px;
+    height: 50px;
+    line-height: 50px;
+    background-color: #34B3A0;
+    color: black;
+    transition-property: background-color;
+    transition-duration: 750ms;
+}
+
+.lien5 {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    text-align: center;
+    border-radius: 5px;
+    border-style: solid;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    background-color: #34B3A0;
+    color: black;
+    transition-property: background-color;
+    transition-duration: 750ms;
+}
+
+.lien6 {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    text-align: center;
+    border-radius: 5px;
+    border-style: solid;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    background-color: #34B3A0;
+    color: black;
+    transition-property: background-color;
+    transition-duration: 750ms;
+}
+
+.lien7 {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    text-align: center;
+    border-style: solid;
+    border-radius: 5px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    background-color: #34B3A0;
+    color: black;
+    transition-property: background-color;
+    transition-duration: 750ms;
+}
+
+.lien8 {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    text-align: center;
+    border-style: solid;
+    border-radius: 5px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    background-color: #34B3A0;
+    color: black;
+    transition-property: background-color;
+    transition-duration: 750ms;
+}
+
+.lien1:hover,
+.lien2:hover,
+.lien3:hover,
+.lien4:hover,
+.lien5:hover,
+.lien6:hover,
+.lien7:hover,
+.lien8:hover {
+    background-color: fuchsia;
+    filter: drop-shadow(10px 10px 0.2rem rgba(0, 0, 0, 0.6));
+    cursor: pointer;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+}
+
+nav {
+    position: fixed;
+ }
+
+ .grid {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    }
+
+ .box a {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    width: 260px;
+    } */
+
+ table {
+     background-position: center;
+ }
+
+ form {
+        background-position: center;
+ }
+ 
